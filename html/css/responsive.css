@@ -15,7 +15,7 @@
     display: block;
     width: 100%;
     margin-bottom: 30px;
-  };
+  }
 }
 
 @media only screen and (max-width : 767px) {
@@ -63,10 +63,10 @@
 
   .career ul.joblist li:last-child {
     float: none;
-    margin-left: }
+    }
 	.career ul.joblist li:nth-child(2){
 		margin-right: 20px;
-  };
+  }
 }
 
 @media only screen and (max-width : 479px) {
@@ -98,7 +98,7 @@
 
   .blog-post-wrapper blockquote footer {
     bottom: 10px!important;
-  };
+  }
 }
 
 /* Small devices (tablets) */
@@ -130,20 +130,20 @@
 
   .company-in-number i::before {
     font-size: 60px;
-  };
+  }
 }
 
 @media (max-width: 991px) {
   #mainContact {
     margin-bottom: 60px;
-  };
+  }
 }
 
 /* Landscape Mobile */
 @media only screen and (min-width : 480px) and (max-width : 767px) {
   .partner-carousel-navigation .prev {
     left: 85%;
-  };
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 991px) {

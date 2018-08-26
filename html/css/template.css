@@ -806,12 +806,12 @@ POPUP FEATURE
 CTA SECTION
 --------------------------------------------------------------------- */
 .cta-section {
-  background-color: #65d3e3;
+  background-color: #8e9bab;
   padding: 20px 0;
 }
 
 .quote-btn {
-  background-color: #7CDCEA !important;
+  background-color: #66707b !important;
   font-size: 18px;
   line-height: 20px;
   padding: 19px 64px;
@@ -821,7 +821,7 @@ CTA SECTION
 }
 
 .quote-btn:hover {
-  background: #24B6B6 !important;
+  background: #66707b !important;
 }
 
 .quote-btn:before {
@@ -876,11 +876,11 @@ FOOTER WIDGET SECTION
   padding: 0 16px;
   margin-top: 12px;
   border-radius: 30px;
-  background-color: #65d3e3;
+  background-color: #8e9bab;
 }
 
 .footer-widget-section address .modal-map:hover {
-  background-color: #333;
+  background-color: #66707b;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -889,19 +889,11 @@ FOOTER WIDGET SECTION
 
 .footer-widget-section address .tel {
   display: block;
-  margin-top: 35px;
+  margin-top: 10px;
   position: relative;
 }
 
-.footer-widget-section address .tel::before {
-  content: "";
-  width: 35px;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: -10px;
-  left: 0;
-}
+
 
 .footer-widget ul li {
   line-height: 32px;
@@ -930,7 +922,7 @@ FOOTER WIDGET SECTION
 }
 
 .newsletter-form .form-group .form-control:focus {
-  border-color: #65d3e3;
+  border-color: #66707b;
 }
 
 .newsletter-form .form-group button {
@@ -940,7 +932,7 @@ FOOTER WIDGET SECTION
   border: 0;
   line-height: 24px;
   background: transparent;
-  color: #65d3e3;
+  color: #66707b;
   padding: 10px;
 }
 
@@ -949,7 +941,7 @@ COPYRIGHT SECTION
 --------------------------------------------------------------------- */
 .copyright-section {
   background-color: #f2f5f8;
-  padding: 45px 0;
+  padding: 10px 0;
 }
 
 .footer-menu li {
@@ -984,7 +976,6 @@ COPYRIGHT SECTION
 }
 
 .copyright-info {
-  margin-top: 14px;
   color: #b4b4b4;
   display: block;
   font-size: 14px;

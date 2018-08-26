@@ -388,7 +388,7 @@ Whyus Setion
 
   .content-text {
     text-align: left;
-  };
+  }
 }
 
 
@@ -483,7 +483,7 @@ TESTIMONIAL SECTION
 @media screen and (min-width: 768px) {
   #testimonial-carousel .carousel-indicators {
     bottom: -3px;
-  };
+  }
 }
 
 #testimonial-carousel .carousel-indicators li {
@@ -691,7 +691,7 @@ span.count-description.flaticon-compass:before {
 ABOUT PAGE
 --------------------------------------------------------------------- */
 .about-intro-section {
-  background: url(../img/intro-bg.jpg) no-repeat;
+  background: url(../img/intro-bg2.jpg) no-repeat;
   background-size: cover;
   padding: 112px 0;
 }
@@ -726,17 +726,17 @@ ABOUT PAGE
 
 .branch i,
 .branch .timer {
-  color: #f291a8;
+  color: #de0025;
 }
 
 .employee i,
 .employee .timer {
-  color: #80c5e5;
+  color: #de0025;
 }
 
 .delivery i,
 .delivery .timer {
-  color: #f3c979;
+  color: #de0025;
 }
 
 .number-info {
@@ -1452,7 +1452,7 @@ FAQ Page
 Contact Page
 -------------------------------------------------------------------*/
 .contact-info-section {
-  padding: 112px 0;
+ padding-bottom: 112px;
 }
 
 .contact-info-section .section-title {
@@ -1468,12 +1468,12 @@ Contact Page
 }
 
 .other-office-address {
-  padding: 112px 0;
+  padding-top: 20px;
   background-color: #f4f6f7;
 }
 
 .other-office-address .content-row {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .other-office-address h2 {
