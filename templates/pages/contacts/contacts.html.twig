@@ -1,0 +1,50 @@
+{% extends 'layouts/inner.html.twig' %}
+
+{% use 'pages/contacts/blocks/form.html.twig' %}
+{% use 'pages/contacts/blocks/map.html.twig' %}
+{# overload all blocks of the form #}
+{% form_theme form _self %}
+
+
+{%- block form_row -%}
+    <div class="form-group{% if errors is defined and errors is not empty %} has-error{% endif %}">
+        {{ form_label(form) }}
+        {{- form_widget(form) -}}
+        {{- form_errors(form) -}}
+    </div>
+{%- endblock form_row -%}
+
+{% block page_content %}
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="row content-row">
+                <div class="col-md-7">
+                    <div class="contact-map">
+                        <h3>Нужна консультация? Напиши нам.</h3>
+                        {% block formContact %}{{ parent() }}{% endblock %}
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="contact-info">
+                        <h3>Адрес:</h3>
+                        <p>г. Чернигов ул. Гончарова 4, оф. 7 14037</p>
+                        <h3>График роботы:</h3>
+                        <p>Пн-Пт: 8:00 - 10:00<br>
+                            Сб-Вс: Выходной</p>
+                        <h3>Телефоны:</h3>
+                        <p>Сервис: +38(066)8896120<br>
+                            Ремонт: +38(066)8896120</p>
+                        <h3>Email:</h3>
+                        <p>example@gmail.com</p>
+                    </div><!-- /.contact-info -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% block map %}{{ parent() }}{% endblock %}
+
+
+
+{% endblock page_content %}

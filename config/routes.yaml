@@ -1,0 +1,12 @@
+
+easy_admin_bundle:
+    resource: App\Controller\AdminController
+    type:     annotation
+    prefix:   /cms
+
+logout:
+    path: /cms/logout
+
+mywebsite_sitemap:
+    path:    /sitemap.xml
+    defaults: { _controller: App\Controller\AdminController::sitemapAction }

@@ -1,0 +1,12 @@
+easy_admin:
+    site_name: 'Part Store'
+    design:
+        brand_color: '#333'
+        menu:
+            - {entity: 'FeedbackContact', label: 'Форма контакты'}
+            - {entity: 'FeedbackFooter', label: 'Перезвонить мне'}
+            - {entity: 'Career', label: 'Вакансии'}
+        assets:
+            js:
+                 - 'https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js'
+                 - '/js/ckeditor_init.js'

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% block meta %}
+            <meta charset="UTF-8">
+        {% endblock %}
+
+        {% block stylesheets %}
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap Core CSS -->
+        <link href="{{ asset('/css/bootstrap.min.css')}}" rel="stylesheet">
+        <!-- Flaticon CSS -->
+        <link href="{{ asset('/fonts/flaticon/flaticon.css')}}" rel="stylesheet">
+        <!-- font-awesome CSS -->
+        <link href="{{ asset('/css/font-awesome.min.css')}}" rel="stylesheet">
+        <!-- Offcanvas CSS -->
+        <link href="{{ asset('/css/hippo-off-canvas.css')}}" rel="stylesheet">
+        <!-- animate CSS -->
+        <link href="{{ asset('/css/animate.css')}}" rel="stylesheet">
+        <!-- language CSS -->
+        <link href="{{ asset('/css/language-select.css')}}" rel="stylesheet">
+        <link href="{{ asset('/owl.carousel/assets/owl.carousel.css')}}" rel="stylesheet">
+        <!-- magnific-popup -->
+        <link href="{{ asset('/css/magnific-popup.css')}}" rel="stylesheet">
+        <!-- Main menu -->
+        <link href="{{ asset('/css/menu.css')}}" rel="stylesheet">
+        <!-- Template Common Styles -->
+        <link href="{{ asset('/css/template.css')}}" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ asset('/css/style.css')}}" rel="stylesheet">
+        <!-- Responsive CSS -->
+        <link href="{{ asset('/css/responsive.css')}}" rel="stylesheet">
+        <link href="{{ asset('/css/alertify.default.css')}}" rel="stylesheet">
+        <link href="{{ asset('/css/alertify.core.css')}}" rel="stylesheet">
+
+        <script src="{{ asset('/js/vendor/modernizr-2.8.1.min.js')}}"></script>
+        <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+        <script src="{{ asset('/js/vendor/html5shim.js')}}"></script>
+        <script src="{{ asset('/js/vendor/respond.min.js')}}"></script>
+
+        {% endblock %}
+    </head>
+
+    <body id="page-top">
+        <div id="st-container" class="st-container">
+            <div class="st-pusher">
+                <div class="st-content">
+                {% block body %}
+                    {% block header %}{% endblock header %}
+
+                    {% block main %}{% endblock main %}
+
+                    {% block footer %}{% endblock footer %}
+
+                    {% block feedbackAgent %}{% endblock %}
+                {% endblock %}
+                </div>
+            </div>
+
+            <!-- OFF CANVAS MENU -->
+            <div class="offcanvas-menu offcanvas-effect">
+                <div class="offcanvas-wrap">
+                    <div class="off-canvas-header">
+                        <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+                    </div>
+                    <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
+                        <li class="{% if app.request.attributes.get('_route') == 'index' %}active{% endif %}"><a href="{{ path('index') }}">Главная</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'about' %}active{% endif %}"><a href="{{ path('about') }}">О компании</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'services' %}active{% endif %}"><a href="{{ path('services') }}">Услуги</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'career' %}active{% endif %}"><a href="{{ path('career') }}">Вакансии</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'contacts' %}active{% endif %}"><a href="{{ path('contacts') }}">Контакты</a></li>
+                    </ul>
+                    <div class="offcanvas-widgets hidden-sm hidden-xs">
+                        <div id="twitterWidget">
+                            <h2>Tweeter feed</h2>
+                            <div class="twitter-widget"></div>
+                        </div>
+                        <div class="newsletter-widget">
+                            <h2>Stay in Touch</h2>
+                            <p>Enter your email address to receive news &amp; offers from us</p>
+
+                            <form class="newsletter-form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="InputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="InputEmail2" placeholder="Your email address">
+                                    <button type="submit" class="btn">Send &nbsp;<i class="fa fa-angle-right"></i></button>
+                                </div>
+                            </form>
+
+                        </div><!-- newsletter-widget -->
+                    </div>
+                </div>
+            </div><!-- .offcanvas-menu -->
+        </div>
+
+
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
+            </div>
+        </div>
+
+        {% block javascripts %}
+            <!-- jQuery -->
+            <script src="{{ asset('/js/jquery.js')}}"></script>
+            <!-- Bootstrap Core JavaScript -->
+            <script src="{{ asset('/js/bootstrap.min.js')}}"></script>
+            <!-- owl.carousel -->
+            <script src="{{ asset('/owl.carousel/owl.carousel.min.js')}}"></script>
+            <!-- Magnific-popup -->
+            <script src="{{ asset('/js/jquery.magnific-popup.min.js')}}"></script>
+            <!-- Offcanvas Menu -->
+            <script src="{{ asset('/js/hippo-offcanvas.js')}}"></script>
+            <!-- inview -->
+            <script src="{{ asset('/js/jquery.inview.min.js')}}"></script>
+            <!-- stellar -->
+            <script src="{{ asset('/js/jquery.stellar.js')}}"></script>
+            <!-- countTo -->
+            <script src="{{ asset('/js/jquery.countTo.js')}}"></script>
+            <!-- classie -->
+            <script src="{{ asset('/js/classie.js')}}"></script>
+            <!-- selectFx -->
+            <script src="{{ asset('/js/selectFx.js')}}"></script>
+            <!-- sticky kit -->
+            <script src="{{ asset('/js/jquery.sticky-kit.min.js')}}"></script>
+            <!--TWITTER FETCHER-->
+            <script src="{{ asset('/js/twitterFetcher_min.js')}}"></script>
+            <!-- Custom Script -->
+            <script src="{{ asset('/js/scripts.js')}}"></script>
+            <script src="{{ asset('/js/alertify.min.js')}}"></script>
+            <script>
+                $(document).ready(function () {
+
+                    $('.form-control').click(function () {
+                        $(this).parent().find('ul').remove();
+                    });
+                    
+                    $('.feedbackFooter').click(function (e) {
+                        e.preventDefault();
+                        $.ajax({
+                            url: '/feedback',
+                            type: 'POST',
+                            data: {'phone':$('#phoneFooter').val()},
+                            dataType: 'json',
+                            success: function (data) {
+                                if(data['type']=='success') {
+                                    alertify.log(data['message']);
+                                    $('#phoneFooter').val('')
+                                }else {
+                                    $('.feedbackFooter').parent().find('ul').remove();
+                                    $('.feedbackFooter').parent().addClass('has-error');
+                                    $('.feedbackFooter').parent().append('<ul><li>'+data['message']+'</li></ul>')
+                                }
+                            }
+                        });
+                    });
+                });
+            </script>
+            {% for message in app.flashes('notice') %}
+            <script>
+                document.addEventListener('DOMContentLoaded', function(){
+                    alertify.log('{{ message }}');
+                });
+            </script>
+            {% endfor %}
+        {% endblock %}
+    </body>
+</html>

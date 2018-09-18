@@ -1,0 +1,83 @@
+
+{% block footer %}
+    <!-- footer-widget-section start -->
+    <section class="footer-widget-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-sm-4">
+                    <div class="footer-widget">
+                        <h3>Контакты</h3>
+
+                        <address>
+                            ул.Степани Бандера 30<br>
+                            <button type="button" class="modal-map" data-toggle="modal" data-target="#cssMapModal">Местоположение</button>
+
+                            <span class="tel">Сервис: +38(066)8896120</span>
+                            <span class="tel">Ремонт: +38(066)8896120</span>
+                        </address>
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="cssMapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Наше местоположение</h4>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div style="height: 400px;">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.9507273867935!2d31.307717943232074!3d51.51465735703847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d5486619217165%3A0x88bd0421cbb62fce!2z0J7QotCU0JXQm9CV0J3QmNCVINCh0JLQr9CX0Jgg4oSWMzQgKNCe0KLQlNCV0JvQldCd0JjQlSDQodCS0K_Ql9CYLCDQn9Ce0KfQotCQKQ!5e0!3m2!1sen!2sua!4v1535300192006" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h3>Информация</h3>
+                        <ul>
+                            <li><a href="{{ path('about') }}">О компании</a></li>
+                            <li><a href="{{ path('services') }}">Услуги</a></li>
+                            <li><a href="{{ path('career') }}">Вакансии</a></li>
+                            <li><a href="{{ path('contacts') }}">Контакты</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-widget">
+                        <h3>Перезонить мне</h3>
+                        <p>Введиде свой номер телефона</p>
+
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="InputEmail1">Номер телефона</label>
+                                <input type="email" class="form-control" id="phoneFooter" placeholder="Ваш номер телефона">
+                                <button type="submit" class="feedbackFooter">Отправить &nbsp;<i class="fa fa-angle-right"></i></button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="copyright-section">
+        <div class="container text-center">
+            <div class="copyright-info">
+                <span>Copyright © 2015 Unship. All Rights Reserved. </span>
+            </div>
+        </div><!-- /.container -->
+    </footer>
+{% endblock %}
+
+
+

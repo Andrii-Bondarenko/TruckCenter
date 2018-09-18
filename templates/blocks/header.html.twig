@@ -1,0 +1,62 @@
+{% block header %}
+    <header class="header">
+        <nav class="top-bar">
+            <div class="overlay-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="call-to-action">
+                                <ul class="list-inline">
+                                    <li><a href="#"><i class="fa fa-phone"></i>Ремонт: +38(066)8896120</a></li>
+                                    <li>
+                                        <a href="#">Сервис: +38(066)8896120</a>
+                                    </li>
+                                    <!--<li><a href="#"><i class="fa fa-envelope"></i> admin@domain.com</a></li>-->
+                                </ul>
+                            </div><!-- /.call-to-action -->
+                        </div><!-- /.col-sm-6 -->
+
+
+
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.overlay-bg -->
+        </nav><!-- /.top-bar -->
+
+        <nav class="navbar navbar-default" role="navigation">
+
+            <div class="container mainnav">
+                <div class="navbar-header">
+                    <h1 class="logo"><a class="navbar-brand" href="index.html"><img src="img/logo2.jpg" alt=""></a></h1>
+
+                    <!-- offcanvas-trigger -->
+                    <button type="button" class="navbar-toggle collapsed pull-right">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Home -->
+                        <li class="dropdown {% if app.request.attributes.get('_route') == 'index' %}active{% endif %} "><a href="{{ path('index') }}">Главная </a></li>
+                        <!-- /Home -->
+                        <li class="dropdown {% if app.request.attributes.get('_route') == 'about' %}active{% endif %}"><a href="{{ path('about') }}">О компании</a></li>
+                        <!-- Pages -->
+                        <li class="dropdown {% if app.request.attributes.get('_route') == 'services' %}active{% endif %}"><a href="{{ path('services') }}">Услуги</a></li>
+                        <!-- /Pages -->
+                        <li class="dropdown {% if app.request.attributes.get('_route') == 'career' %}active{% endif %}"><a href="{{ path('career') }}">Вакансии </a></li>
+                        <!-- Services -->
+                        <li class="dropdown {% if app.request.attributes.get('_route') == 'contacts' %}active{% endif %}"><a href="{{ path('contacts') }}">Контакты </a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+
+
+        </nav>
+    </header>
+{% endblock %}

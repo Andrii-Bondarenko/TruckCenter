@@ -1,0 +1,10 @@
+
+{% block formContact %}
+    {{ form_start(form,  {'attr': {'id':'mainContact' }}) }}
+
+        {{ form_row(form.firstName) }}
+        {{ form_row(form.phone) }}
+        {{ form_row(form.comment) }}
+        <button type="submit" class="btn btn-primary">Отравить</button>
+    {{ form_end(form) }}
+{% endblock %}

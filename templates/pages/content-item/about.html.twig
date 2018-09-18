@@ -1,0 +1,64 @@
+{% extends 'layouts/inner.html.twig' %}
+
+{% use 'blocks/breadcrumbs.html.twig' %}
+{% use 'blocks/feedback.html.twig' %}
+
+{% block page_content %}
+    {% block breadcrumbs %}{{ parent() }}{% endblock %}
+
+    {% block cms_content %}
+        <!-- about-intro-section -->
+        <section class="about-intro-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="about-intro">
+                            <h2>О компании «TRUCK CENTER»</h2>
+
+                            <p>Наша цель – предоставление качественных услуг автоперевозок грузов основанное на долгосрочном партнерском сотрудничестве с клиентами. Нашими клиентами есть и становятся экспедиторские и логистические компании, экспортеры и импортеры, крупные экспедиторы, морские контейнерные линии.</p>
+                            <p>Работа «ТК «ЦЕНТР» основана на использовании собственного автотранспорта, автопарк насчитывает более 10 машин контейнеровозов, количество постоянно расширяется.</p>
+                            <p>Нашим клиентам Мы обеспечиваем мобильность подачи транспорта, сохранность груза в пути, доставку вовремя. Мы участвуем в международных логистических схемах доставки грузов, где автоперевозка это необходимый промежуточный процесс. Отсюда и слоган нашей компании.</p>
+
+                            <div class="company-in-number">
+                                <div class="row">
+                                    <div class="col-xs-4 branch clearfix">
+                                        <i class="flaticon-international34"></i>
+
+                                        <div class="number-info">
+                                            <strong><span class="timer">100</span></strong>
+                                            <span class="facts-description">Авто в день</span>
+                                        </div>
+
+                                    </div> <!-- /.col-sm-3 -->
+
+                                    <div class="col-xs-4 employee clearfix">
+                                        <i class="flaticon-logistics31"></i>
+
+                                        <div class="number-info">
+                                            <strong><span class="timer">1000</span></strong>
+                                            <span class="facts-description">Рабочих</span>
+                                        </div>
+                                    </div><!-- /.col-sm-3 -->
+
+                                    <div class="col-xs-4 delivery clearfix">
+                                        <i class="flaticon-logistics20"></i>
+
+                                        <div class="number-info">
+                                            <strong><span class="timer">5000</span></strong>
+                                            <span class="facts-description">Продаж в месяц</span>
+                                        </div>
+                                    </div><!-- /.col-sm-3 -->
+                                </div>
+                            </div>
+                        </div><!-- /.about-intro -->
+                    </div><!-- /.col-md-7 -->
+                    <div class="col-md-5"></div>
+                </div>
+            </div>
+        </section>
+
+    {% endblock cms_content %}
+
+    {% block feedback %}{{ parent() }}{% endblock %}
+
+{% endblock page_content %}

@@ -1,0 +1,26 @@
+{% block meta %}
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+
+    {% if meta.title is defined and meta.title is not empty %}
+        <title>{{ meta.title }}</title>
+    {% endif %}
+    {% if meta.keywords is defined and meta.keywords is not empty %}
+        <meta name="keywords" content="{{ meta.keywords }}">
+    {% endif %}
+    {% if meta.description is defined and meta.description is not empty %}
+        <meta name="description" content="{{ meta.description }}">
+    {% endif %}
+    {% if (app.request.query.get('typeAd') is defined and app.request.query.get('typeAd') is not empty)or
+        (app.request.query.get('city') is defined and app.request.query.get('city') is not empty) or
+        (app.request.query.get('title') is defined and app.request.query.get('title') is not empty) or
+        (app.request.query.get('intoName') is defined and app.request.query.get('intoName') is not empty) or
+        (app.request.query.get('withPhoto') is defined and app.request.query.get('withPhoto') is not empty) or
+        (app.request.query.get('priceMax') is defined and app.request.query.get('priceMax') is not empty)
+
+        %}
+        <meta name="robots" content="noindex, follow">
+    {% endif %}
+
+{% endblock %}

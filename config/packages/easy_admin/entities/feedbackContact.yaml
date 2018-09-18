@@ -1,0 +1,30 @@
+easy_admin:
+    entities:
+        FeedbackContact:
+            class: App\Entity\FeedbackContact
+            list:
+                title: 'Список формы контакты'
+                actions:
+                - '-new'
+                - '-edit'
+                - { name: 'show', label: 'Показать'}
+                - { name: 'delete', label: 'Удалить'}
+                - { name: 'search', label: 'Поиск'}
+
+                fields:
+                    - { property: 'id', type: 'text',  }
+                    - { property: 'firstName', type: 'text', label: 'Имя' }
+                    - { property: 'phone', type: 'text', label: 'Телефон' }
+
+            show:
+                title: 'Инфо'
+                actions:
+                - '-new'
+                - '-edit'
+                - { name: 'list', label: 'Вернуть к сиску'}
+                - { name: 'delete', label: 'Удалить'}
+                fields:
+                    - { property: 'id', type: 'text' }
+                    - { property: 'firstName', type: 'text', label: 'Имя' }
+                    - { property: 'phone', type: 'text', label: 'Телефон' }
+                    - { property: 'comment', type: 'text' ,label: 'Сообщение'}

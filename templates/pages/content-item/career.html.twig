@@ -1,0 +1,35 @@
+{% extends 'layouts/inner.html.twig' %}
+
+{% use 'blocks/breadcrumbs.html.twig' %}
+{% use 'blocks/feedback.html.twig' %}
+
+{% block page_content %}
+    {% block breadcrumbs %}{{ parent() }}{% endblock %}
+
+    {% block cms_content %}
+        {% for item in data %}
+            <!-- team-intro -->
+            <section class="team-intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="team-thumb">
+                                <img class="img-responsive" src="{{ asset('/img/uploads/'~item.image) }}" alt="team thumb">
+                            </div>
+                        </div><!--/.col-->
+                        <div class="col-sm-7">
+                            <div class="team-intro-content">
+                                <h2>{{ item.vakancy }}</h2>
+                                {{ item.description|raw }}
+                            </div>
+                        </div><!--/.col-->
+                    </div><!--/.row-->
+                </div><!-- /.container-->
+            </section>
+        {% endfor %}
+
+    {% endblock cms_content %}
+
+    {% block feedback %}{{ parent() }}{% endblock %}
+
+{% endblock page_content %}

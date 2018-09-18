@@ -1,0 +1,15 @@
+easy_admin:
+    entities:
+        FeedbackFooter:
+            class: App\Entity\FeedbackFooter
+            list:
+                title: 'Список "Перезвонить Мне"'
+                actions:
+                - '-new'
+                - '-edit'
+                - { name: 'delete', label: 'Удалить'}
+                - { name: 'search', label: 'Поиск'}
+
+                fields:
+                    - { property: 'id', type: 'text',  }
+                    - { property: 'phone', type: 'text', label: 'Телефон' }

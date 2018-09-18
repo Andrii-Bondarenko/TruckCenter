@@ -1,0 +1,102 @@
+{% extends 'layouts/inner.html.twig' %}
+
+{% use 'blocks/breadcrumbs.html.twig' %}
+{% use 'blocks/feedback.html.twig' %}
+
+{% block page_content %}
+    {% block breadcrumbs %}{{ parent() }}{% endblock %}
+
+    {% block cms_content %}
+        <section class="service-page-contents section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="service-featured-thumbs">
+                            <div class="service-thumb">
+                                <a href="img/service/zoom1.jpg" class="img-link">
+                                    <img class="img-responsive" src="img/service/sv1.jpg" alt="service">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="service-thumb">
+                                        <a href="img/service/sv2.jpg" class="img-link">
+                                            <img class="img-responsive" src="img/service/sv2.jpg" alt="service">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <div class="service-thumb">
+                                        <a href="img/service/zoom3.jpg" class="img-link">
+                                            <img class="img-responsive" src="img/service/sv3.jpg" alt="service">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- /.row -->
+                        </div><!-- /.service-featured-thumbs -->
+
+                    </div><!-- /.col -->
+
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="service-featured-content">
+                            <h2>Автоцентр  "Truck Center" лучший в городе Чернигов</h2>
+                            <p>     Автоцентр  "Truck Center" является современным сервисным  центром таких всемирно известных брендов
+                                как  KIA, Jeep, Opel, Chevrolet, ЗАЗ, Chery, Cadillac и предлагает своим
+                                клиентам полный спектр услуг по сервисному и гарантийному обслуживанию автомобилей
+                                указанных брендов.</p>
+                            <br>
+                            <p>     Передовые технологии и специализированный диагностический
+                                инструмент от производителя позволяют нашим квалифицированным
+                                специалистам быстро и точно определить причину неполадки и устранить
+                                ее в самые кратчайшие сроки. </p>
+                        </div>
+
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+                <div class="service-blocks">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="service-block clearfix">
+                                <div class="service-icon">
+                                    <i class="flaticon-callcenter"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Консультация</h3>
+                                    <p>Наши менеджера помогут вам в сервисе и покупке деталей </p>
+                                </div>
+                            </div><!-- /.service-block -->
+                        </div><!-- /.col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service-block clearfix">
+                                <div class="service-icon">
+                                    <i class="icon-tools-2 iconmoon" ></i>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Ремонт</h3>
+                                    <p>Специалисты "Truck Center" сделаю все быстро и качествено</p>
+                                </div>
+                            </div><!-- /.service-block -->
+                        </div><!-- /.col-sm-4 -->
+                        <div class="col-sm-4">
+                            <div class="service-block clearfix">
+                                <div class="service-icon">
+                                    <i class="flaticon-platform12"></i>
+                                </div>
+                                <div class="service-content">
+                                    <h3>Продажа запчастей</h3>
+                                    <p>У нас вы можете сразу приобрести и заменить запчасть</p>
+                                </div>
+                            </div><!-- /.service-block -->
+                        </div><!-- /.col-sm-4 -->
+
+                    </div><!-- /.row -->
+                </div><!-- /.service-blocks -->
+            </div><!-- /.container -->
+
+        </section>
+    {% endblock cms_content %}
+
+    {% block feedback %}{{ parent() }}{% endblock %}
+
+{% endblock page_content %}
