@@ -1,5 +1,7 @@
 
 ###> symfony/framework-bundle ###
+/.idea/workspace.xml
+/.idea/vcs.xml
 /.env
 /public/bundles/
 /var/
