@@ -290,6 +290,21 @@ OUR SERVICES SECTION
 /* ------------------------------------------------------------------
 Featuer Section
 --------------------------------------------------------------------- */
+
+
+@media (max-width : 768px) {
+    .feature-content {
+        width: 70%;
+    }
+}
+
+@media (max-width : 450px) {
+    .feature-content {
+        width: 100%;
+    }
+}
+
+
 .feature-section {
   background: url(../img/feature-bg-volvo.jpg) no-repeat;
   background-position: center !important;
