@@ -178,7 +178,7 @@ Author: Cloud Software Solution Ltd.
     }
 
     .hero-slide .carousel-caption{
-        width: 75%;
+        width: 60%;
         top: 10px;
     }
 
@@ -187,9 +187,7 @@ Author: Cloud Software Solution Ltd.
     }
 
     .hero-slide .carousel-caption .btn{
-        font-size: 10px;
-        padding: 5px 10px;
-        border-width: 1px;
+        display: none;
     }
 }
 
