@@ -47,7 +47,8 @@ class AdminController extends EasyAdminController
         $hostname = $request->getHost();
         $urls[] = ['loc' => $this->get('router')->generate('about'), 'changefreq' => 'weekly', 'priority' => '1.0'];
         $urls[] = ['loc' => $this->get('router')->generate('contacts'), 'changefreq' => 'weekly', 'priority' => '1.0'];
-        $urls[] = ['loc' => $this->get('router')->generate('services'), 'changefreq' => 'weekly', 'priority' => '1.0'];
+        $urls[] = ['loc' => $this->get('router')->generate('service'), 'changefreq' => 'weekly', 'priority' => '1.0'];
+        $urls[] = ['loc' => $this->get('router')->generate('sale'), 'changefreq' => 'weekly', 'priority' => '1.0'];
         $urls[] = ['loc' => $this->get('router')->generate('career'), 'changefreq' => 'weekly', 'priority' => '1.0'];
 
 

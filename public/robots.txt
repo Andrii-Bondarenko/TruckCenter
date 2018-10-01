@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /cms/
+
+User-agent: Yandex
+Disallow: /cms/
+
+User-Agent: *
+Disallow: /cms/
+
+Host: truck-centr.cn.ua
+Sitemap: http://truck-centr.cn.ua/sitemap.xml
