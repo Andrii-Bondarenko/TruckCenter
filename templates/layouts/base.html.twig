@@ -75,8 +75,8 @@
 
                             <a href="javascript:void(0);">Услуги</a>
                             <ul>
+                                <li class="{% if app.request.attributes.get('_route') == 'sale' %}active{% endif %}"><a href="{{ path('sale') }}">Продажа запчастей</a></li>
                                 <li class="{% if app.request.attributes.get('_route') == 'service' %}active{% endif %}"><a href="{{ path('service') }}">Сервис</a></li>
-                                <li class="{% if app.request.attributes.get('_route') == 'sale' %}active{% endif %}"><a href="{{ path('sale') }}">Продажа</a></li>
                             </ul>
 
                         </li>

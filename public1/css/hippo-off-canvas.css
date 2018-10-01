@@ -1265,7 +1265,7 @@ Offcanvas Style For Customization
   font-size: 14px;
   display: inline-block;
   box-shadow: none;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 #offcanvasMenu li.open > a > i {

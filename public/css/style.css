@@ -227,7 +227,7 @@ OUR SERVICES SECTION
   background: -webkit-linear-gradient(left, #3b2b6a 0%,#307c95 100%,#7db9e8 100%);
   background: -o-linear-gradient(left, #3b2b6a 0%,#307c95 100%,#7db9e8 100%);
   background: -ms-linear-gradient(left, #3b2b6a 0%,#307c95 100%,#7db9e8 100%);
-  background: linear-gradient(to right, rgba(59, 43, 106, 0.6) 0%,rgba(48, 124, 149, 0.6) 100%,rgba(125, 185, 232, 0.6) 100%);
+  background: linear-gradient(to right, rgba(136, 135, 135, 0.6) 0%,rgba(25, 25, 25, 0.6) 100%,rgba(0, 0, 0, 0.6) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b2b6a', endColorstr='#7db9e8',GradientType=1 );
   position: absolute;
   top: 0;
@@ -256,7 +256,7 @@ OUR SERVICES SECTION
 }
 
 .service-home .content-row {
-  margin-top: 154px;
+  margin-top: 60px;
 }
 
 .service-home .readmore {
@@ -293,16 +293,16 @@ OUR SERVICES SECTION
 Featuer Section
 --------------------------------------------------------------------- */
 .feature-section {
-  background: url(../img/feature-bg.jpg) no-repeat;
+  background: url(../img/feature-bg-volvo.jpg) no-repeat;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  color: #fff;
+  color: #606676;
 }
 
 
 .feature-section h2 {
-  color: #fff;
+  color: #de0025;
   margin-bottom: 35px;
 }
 
@@ -1514,4 +1514,7 @@ Contact Page
 .branch-map img {
   background-color: #fff;
   padding: 2px;
+}
+.red {
+    color:#de0025;
 }
