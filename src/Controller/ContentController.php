@@ -30,13 +30,24 @@ class ContentController extends BaseController
     }
 
     /**
-     * @Route("/services", name="services")
+     * @Route("/service", name="service")
      */
     public function servicesAction(Request $request)
     {
-        $this->breadcrumbs[] = ['url'=>'','name'=>'Услуги'];
-        $this->setup($request,'Услуги');
+        $this->breadcrumbs[] = ['url'=>'','name'=>'Сервис'];
+        $this->setup($request,'Сервис');
         return $this->render('pages/content-item/services.html.twig', $this->responseData);
+    }
+
+
+    /**
+     * @Route("/sale", name="sale")
+     */
+    public function saleAction(Request $request)
+    {
+        $this->breadcrumbs[] = ['url'=>'','name'=>'Продажа'];
+        $this->setup($request,'Продажа');
+        return $this->render('pages/content-item/sale.html.twig', $this->responseData);
     }
 
     /**

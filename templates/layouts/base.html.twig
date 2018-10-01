@@ -71,7 +71,15 @@
                     <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
                         <li class="{% if app.request.attributes.get('_route') == 'index' %}active{% endif %}"><a href="{{ path('index') }}">Главная</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'about' %}active{% endif %}"><a href="{{ path('about') }}">О компании</a></li>
-                        <li class="{% if app.request.attributes.get('_route') == 'services' %}active{% endif %}"><a href="{{ path('services') }}">Услуги</a></li>
+                        <li class="{% if app.request.attributes.get('_route') == 'service' or app.request.attributes.get('_route') == 'sale' %}active{% endif %}">
+
+                            <a href="javascript:void(0);">Услуги</a>
+                            <ul>
+                                <li class="{% if app.request.attributes.get('_route') == 'service' %}active{% endif %}"><a href="{{ path('service') }}">Сервис</a></li>
+                                <li class="{% if app.request.attributes.get('_route') == 'sale' %}active{% endif %}"><a href="{{ path('sale') }}">Продажа</a></li>
+                            </ul>
+
+                        </li>
                         <li class="{% if app.request.attributes.get('_route') == 'career' %}active{% endif %}"><a href="{{ path('career') }}">Вакансии</a></li>
                         <li class="{% if app.request.attributes.get('_route') == 'contacts' %}active{% endif %}"><a href="{{ path('contacts') }}">Контакты</a></li>
                     </ul>
