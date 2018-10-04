@@ -1,5 +1,6 @@
 
 ###> symfony/framework-bundle ###
+.htaccess
 /.idea/workspace.xml
 /.idea/vcs.xml
 /.env

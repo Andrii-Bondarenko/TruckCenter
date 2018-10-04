@@ -5,6 +5,8 @@ namespace App\Controller;
 use App\Entity\Career;
 use App\Repository\CareerRepository;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -60,6 +62,35 @@ class ContentController extends BaseController
 
         $this->responseData['data'] = $this->getDoctrine()->getRepository(Career::class)->findAll();
         return $this->render('pages/content-item/career.html.twig', $this->responseData);
+    }
+
+    /**
+     *
+     * @Route("/{any}", name="any")
+     */
+    public function redirectRoute($any) {
+        switch (strtolower($any)) {
+            case 'contacts': {
+                return $this->redirectToRoute('contacts',array() ,301);
+            }
+            case 'sale': {
+                return $this->redirectToRoute('sale',array() ,301);
+            }
+            case 'service': {
+                return $this->redirectToRoute('service',array() ,301);
+            }
+            case 'career': {
+                return $this->redirectToRoute('career',array() ,301);
+            }
+            case 'about': {
+                return $this->redirectToRoute('about',array() ,301);
+            }
+            default : {
+                throw new NotFoundHttpException('Sorry not existing!');
+            }
+        }
+
+        throw new NotFoundHttpException('Sorry not existing!');
     }
 
 }
